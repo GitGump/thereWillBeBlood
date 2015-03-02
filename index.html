@@ -30,20 +30,7 @@
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 				sectionsColor: ['#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F'],
-				css3: true,
-				afterLoad: function(anchorLink, index){
-
-					//section 2
-					if(index == 2){
-						//moving the image
-						$('#section1').find('img').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-
-						$('#section1').find('p').fadeIn(1800);
-
-					}
-				}
+				css3: true
 			});
 		});
 	</script>
@@ -64,8 +51,6 @@
 	<div class="section" id="section1">
 		<div class="intro">
 			<h1>A Paul Thomas Anderson film</h1>
-			<img src="img/Daniel_Day-Lewis_2007.jpg" alt="Daniel Day-Lewis">
-			<p>Starring in</p>
 		</div>
 	</div>
 
